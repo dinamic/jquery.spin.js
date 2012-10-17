@@ -28,17 +28,17 @@
             
             if (!data.spinBlocker) {
                 data.spinBlocker = $('<div class="spinblocker"></div>');
-                data.spinBlocker.css({
-                    position: 'absolute',
-                    zIndex: 9999,
-                    top: container.offset().top + 'px',
-                    left: container.offset().left + 'px',
-                    width: container.outerWidth() + 'px',
-                    height: container.outerHeight() + 'px'
-                });
-
                 data.spinBlocker.appendTo(container.parents('body'));
             }
+            
+            data.spinBlocker.css({
+                position: 'absolute',
+                zIndex: 9999,
+                top: container.offset().top + 'px',
+                left: container.offset().left + 'px',
+                width: container.outerWidth() + 'px',
+                height: container.outerHeight() + 'px'
+            });
 
             data.spinBlocker.show(opts);
             data.spinBlocker.spin();
