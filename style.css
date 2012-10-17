@@ -1,0 +1,7 @@
+.spinblocker {
+	background: silver;
+	
+	opacity:0.3;
+	-ms-filter:'alpha(opacity=30)';
+	filter:alpha(opacity=30)
+}
